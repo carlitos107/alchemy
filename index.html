@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Skyrim Alchemy Data Base</title>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a href="admin.html" class="sidebar__logo"
+        >Skyrim Requiem<br /><span>Alchemy Data Base</span></a
+      >
+      <ul class="sidebar__list">
+        <li class="sidebar__item">
+          <a href="#" data-type="ingredient">Ингредиенты</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="#" data-type="effect">Эффекты</a>
+        </li>
+        <li class="sidebar__item">
+          <form class="sidebar__form search">
+            <div class="search__type">
+              <span class="search__type-title">Что ищем?</span>
+              <div class="search__type-wrapper">
+                <label for="ingredient" class="search__type-name">
+                  Ингредиент
+                  <input
+                    type="radio"
+                    name="search-type"
+                    id="ingredient"
+                    value="ingredient"
+                  />
+                </label>
+                <label for="effect" class="search__type-name">
+                  Эффект
+                  <input
+                    type="radio"
+                    name="search-type"
+                    id="effect"
+                    value="effect"
+                  />
+                </label>
+              </div>
+            </div>
+            <input
+              type="text"
+              class="search__text-input"
+              placeholder="Название"
+            />
+            <button type="button" class="search__btn">
+              <svg class="icon icon-search">
+                <use xlink:href="img/search-solid.svg#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </aside>
+
+    <section class="content"></section>
+
+    <script src="js/db.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/search-radio.js"></script>
+  </body>
+</html>
