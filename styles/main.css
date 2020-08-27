@@ -311,7 +311,7 @@ body {
   padding: 0 3%;
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 20px;
-  background: darkslategray url(/img/itl.cat_skyrim-wallpaper_41872.png) center center/cover no-repeat;
+  background: darkslategray url(./img/itl.cat_skyrim-wallpaper_41872.png) center center/cover no-repeat;
   background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden; }
 
