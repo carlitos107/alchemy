@@ -130,7 +130,6 @@
     return res;
   }
 
-  console.log(getCongenialIngredients(3));
   //
   //view
   //
